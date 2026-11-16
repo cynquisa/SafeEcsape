@@ -20,12 +20,25 @@ Player::Player(std::string name, std::string CharacterSymbol, int numOfMatches, 
 Player Player::createNewPlayer()
 
 {
-	ConsoleColor::Print( "※※※※※※※※※※※※※※※※※※ Player Creation ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※\n", ConsoleColor::Ink::Purple);
+	system("cls");
+
+	ConsoleColor::Print( "※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※\n", ConsoleColor::Ink::Green);
+	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
+	ConsoleColor::Print("             Player Creation\n", ConsoleColor::Ink::Cyan);
 	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
 	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
+	ConsoleColor::Print("※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※\n", ConsoleColor::Ink::Green);
 
 
-	std::string nameInput = Input::GetString("Enter your player name please: ");
+	std::string nameInput = Input::GetString("Enter your name please: ");
+	system("cls");
+	ConsoleColor::Print("※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※\n", ConsoleColor::Ink::Purple);
+	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
+	ConsoleColor::Print("             Choose Your Avatar\n", ConsoleColor::Ink::Cyan);
+	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
+	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
+	ConsoleColor::Print("※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※\n", ConsoleColor::Ink::Purple);
+
 
 	std::vector<std::string> characterChoice;
 	characterChoice.push_back("¬_¬");
@@ -34,7 +47,7 @@ Player Player::createNewPlayer()
 	characterChoice.push_back("<>_<>");
 
 	
-	ConsoleColor::Print("\nChoose your character: \n", ConsoleColor::Ink::Yellow);
+	ConsoleColor::Print("\nChoose your character: \n", ConsoleColor::Ink::White);
 	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
 
 	
@@ -49,10 +62,11 @@ Player Player::createNewPlayer()
 	
 	std::string selectedSymbol = characterChoice[choice - 1];
 
+
 	ConsoleColor::Print("Your player is created! Welcome,  " + nameInput + " " + selectedSymbol + "\n\n", ConsoleColor::Ink::Green);
 	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
 	
-
+	Input::Pause("Press Enter to continue...");
 	return Player(nameInput, selectedSymbol, 0, 0);
 }
 

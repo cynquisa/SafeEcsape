@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>
 #include "GameMenu.h"
 #include <string>
 #include "Input.h"
@@ -6,11 +7,21 @@
 
 GameMenu::MenuChoice GameMenu::menuChoice ()
 {
-	
-	ConsoleColor::Print("1. Player\n", ConsoleColor::Ink::Yellow);
-	ConsoleColor::Print( "2. Select Level\n", ConsoleColor::Ink::Yellow);
-	ConsoleColor::Print("3. High Scores\n", ConsoleColor::Ink::Yellow);
-	ConsoleColor::Print("4. End\n", ConsoleColor::Ink::Yellow);
+	system("cls");
+	ConsoleColor::Print(" =*==*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= \n", ConsoleColor::Ink::Cyan);
+	ConsoleColor::Print("  *                                                         *  \n", ConsoleColor::Ink::Cyan);
+	ConsoleColor::Print(" =*=             Safe Escape Main Menu                     =*= \n", ConsoleColor::Ink::Cyan);
+	ConsoleColor::Print("  *                                                         *  \n", ConsoleColor::Ink::Cyan);
+	ConsoleColor::Print(" =*=*=*=*=**=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=* \n", ConsoleColor::Ink::Cyan);
+	ConsoleColor::Print(" =*=*=*=*=**=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=* \n", ConsoleColor::Ink::Cyan);
+	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
+	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
+
+
+	ConsoleColor::Print("1. Create Player\n", ConsoleColor::Ink::White);
+	ConsoleColor::Print( "2. Play\n", ConsoleColor::Ink::White);
+	ConsoleColor::Print("3. High Scores\n", ConsoleColor::Ink::White);
+	ConsoleColor::Print("4. End\n", ConsoleColor::Ink::White);
 	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
 	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
 

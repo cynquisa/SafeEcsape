@@ -36,7 +36,7 @@ I have finally broken something. I have encountered a major bug with my input va
 
 ### Week 3
 
-Stay tuned, this stand up is coming soon...
+This week has been a world wind of research. I start the week thing I would create a version the game where players could play against each other. Well that did not happen. I created a Pause () , because I wanted game screen to clear in between the selecting menu options. I updated my color scheme, and updated the prompts because I got feed back from my daughter that she did not understand the prompts. While I was testing my changes the game, I noticed if you pressed the keys 1-4 you would perform menu actions during game play. It took me days to realize that I set my while loop to true. So, the conditions of the loop were never met causing to loop back to the beginning if you pressed those keys. I researched the pvp style game and realized It would to much for me to take on before Sunday. I broke my game but I fixed it. I plan to add at least one secondary wat play the game for to players.
 
 ### Week 4
 

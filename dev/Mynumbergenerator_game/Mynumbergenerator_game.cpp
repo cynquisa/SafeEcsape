@@ -38,7 +38,6 @@ int main()
 	ConsoleColor::Print(" ⌈—————————————————————————————————————————————————————————⌉ \n", ConsoleColor::Ink::Red);
 	ConsoleColor::Print(" | ⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄| \n", ConsoleColor::Ink::Red);
 	ConsoleColor::Print(" | ⇊                                                      ⇊ | \n", ConsoleColor::Ink::Red);
-	ConsoleColor::Print(" | ⇊                                                      ⇊ | \n", ConsoleColor::Ink::Red);
 	ConsoleColor::Print(" | ⇊	    ========================================      ⇊ | \n", ConsoleColor::Ink::Red);
 	ConsoleColor::Print(" | ⇊      |                                         |     ⇊ | \n", ConsoleColor::Ink::Red);
 	ConsoleColor::Print(" | ⇊      |                                         |     ⇊ | \n", ConsoleColor::Ink::Red);
@@ -60,7 +59,7 @@ int main()
 	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
 	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
 	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
-
+	Input::Pause("Press Enter to open the main menu.....");
 
 	while (isRunning)
 	{
@@ -99,6 +98,7 @@ int main()
 
 			else std::cout << "\nNo players have been recorded.\n";
 
+			Input::Pause("Press Enter to retunr to the main menu...");
 			break;
 		}
 		case GameMenu::MenuChoice::End:
