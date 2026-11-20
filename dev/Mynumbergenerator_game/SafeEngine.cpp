@@ -47,6 +47,16 @@ bool Unlock::playLevel(Player& activePlayer)
 	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
 	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
 
+	std::cout << "\033[90m" << R"(
+      
+    ======================================================
+
+    | |        | | < (.) > | | < (.) > | |        | |
+    | |      _ | |    .    | |    .    | | _      | |
+    | |     ( __ D    .    | |    .   C __  )     | |
+    | |     ( __ D       ( | | )      C __  )     | |   
+    | |     ( __ D         | |        C __  )     | |
+)" << "\033[0m\n";
 
 	ConsoleColor::Print("1. Easy  (Guess a number between 1 - 100 out of 15 chances.)\n", ConsoleColor::Ink::White);
 	ConsoleColor::Print("2. Hard  (Guess a number between 1 - 150 out of 12 chances.)\n", ConsoleColor::Ink::White);
@@ -111,6 +121,8 @@ bool Unlock::playLevel(Player& activePlayer)
 		}
 		else if (result == GuessResult::Correct)
 		{
+
+
 			ConsoleColor::Print("\n", ConsoleColor::Ink::White);
 			ConsoleColor::Print("\n", ConsoleColor::Ink::White);
 			ConsoleColor::Print("\n", ConsoleColor::Ink::White);
