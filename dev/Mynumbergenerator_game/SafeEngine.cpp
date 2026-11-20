@@ -124,6 +124,17 @@ bool Unlock::playLevel(Player& activePlayer)
 		else if (result == GuessResult::Correct)
 		{
 
+			std::cout << "\033[90m" << R"(
+	  ======================================
+			| |         | |         | |
+			| |         | |         | |
+			| |         | |         | |
+			| |                     | |
+			| |    E S C A P E D    | |
+			| |       E X I T       | |
+		      )" << "\033[0m\n";
+
+
 
 			ConsoleColor::Print("\n", ConsoleColor::Ink::White);
 			ConsoleColor::Print("\n", ConsoleColor::Ink::White);
@@ -154,6 +165,7 @@ if (!crackedSafe)
     | |     ( __ D    *    | |    *   C __  )     | |
     | |   ( __ D      *  ( | | )  *     C __  )   | |   
     | |     ( __ D         | |        C __  )     | |
+			Y O U   D I D   N O T  E S C A P E
 
 )" << "\033[0m\n";
 

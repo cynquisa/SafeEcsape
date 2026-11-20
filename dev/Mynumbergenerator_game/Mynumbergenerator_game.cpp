@@ -23,11 +23,6 @@ int main()
 	GameMenu gameMenu;
 
 	Player* activePlayer = nullptr;
-	Player savedPlayer;
-	if (savedPlayer.loadFromFile("player_save.txt"))
-	{
-		activePlayer = new Player(savedPlayer);
-	}
 
 	bool isRunning = true;
 
@@ -50,12 +45,8 @@ int main()
     | |     ( __ D         | |        C __  )     | |
     | |     ( __ D       ( | | )      C __  )     | |   
     | |     ( __ D         | |        C __  )     | |
-                  F I N D   T H E      C O D E
+       F I N D   T H E   C O D E   T O  E S C A P E
 )" << "\033[0m\n";
-
-
-
-
     
 	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
 	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
