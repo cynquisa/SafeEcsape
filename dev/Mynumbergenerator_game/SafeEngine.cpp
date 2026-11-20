@@ -111,28 +111,6 @@ bool Unlock::playLevel(Player& activePlayer)
 		}
 		else if (result == GuessResult::Correct)
 		{
-			ConsoleColor::Print(" ⌈—————————————————————————————————————————————————————————⌉ \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄|       | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊                                                      ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊                                                      ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊	    ========================================       ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |                                         | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |                                         | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |       ( 7 )  ( 8 )  ( 9 )               | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |       ( 4 )  ( 5 )  ( 6 )       _       | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |       ( 1 )  ( 2 )  ( 3 )     /   /     | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |                               |   |     | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |                               |   |     | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |                               |   |     | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |         _ _ _ _ _ _ _ _       | _ |     | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |       {                 }               | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |       {    O P E N      }               | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |       { _ _ _ _ _ _ _ _ }               | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |                                         | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊	    ========================================       ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊                                                      ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄| \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" ⌊———————————————————————————————————————————————————————— ⌋ \n", ConsoleColor::Ink::Green);
 			ConsoleColor::Print("\n", ConsoleColor::Ink::White);
 			ConsoleColor::Print("\n", ConsoleColor::Ink::White);
 			ConsoleColor::Print("\n", ConsoleColor::Ink::White);
@@ -152,6 +130,27 @@ bool Unlock::playLevel(Player& activePlayer)
 
 if (!crackedSafe)
 {
+	ConsoleColor::Print(" ⌈——————————————————————————————————————————————————————————⌉ \n", ConsoleColor::Ink::Green);
+	ConsoleColor::Print(" | ⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄| \n", ConsoleColor::Ink::Green);
+	ConsoleColor::Print(" | ⇊                                                      ⇊ | \n", ConsoleColor::Ink::Green);
+	ConsoleColor::Print(" | ⇊	    ========================================      ⇊ | \n", ConsoleColor::Ink::Green);
+	ConsoleColor::Print(" | ⇊      |                                         |     ⇊ | \n", ConsoleColor::Ink::Green);
+	ConsoleColor::Print(" | ⇊      |                                         |     ⇊ | \n", ConsoleColor::Ink::Green);
+	ConsoleColor::Print(" | ⇊      |       ( 7 )  ( 8 )  ( 9 )               |     ⇊ | \n", ConsoleColor::Ink::Green);
+	ConsoleColor::Print(" | ⇊      |       ( 4 )  ( 5 )  ( 6 )       _       |     ⇊ | \n", ConsoleColor::Ink::Green);
+	ConsoleColor::Print(" | ⇊      |       ( 1 )  ( 2 )  ( 3 )     /   /     |     ⇊ | \n", ConsoleColor::Ink::Green);
+	ConsoleColor::Print(" | ⇊      |                               |   |     |     ⇊ | \n", ConsoleColor::Ink::Green);
+	ConsoleColor::Print(" | ⇊      |                               |   |     |     ⇊ | \n", ConsoleColor::Ink::Green);
+	ConsoleColor::Print(" | ⇊      |                               |   |     |     ⇊ | \n", ConsoleColor::Ink::Green);
+	ConsoleColor::Print(" | ⇊      |         _ _ _ _ _ _ _ _       | _ |     |     ⇊ | \n", ConsoleColor::Ink::Green);
+	ConsoleColor::Print(" | ⇊      |       {                 }               |     ⇊ | \n", ConsoleColor::Ink::Green);
+	ConsoleColor::Print(" | ⇊      |       {  L O C K E D    }               |     ⇊ | \n", ConsoleColor::Ink::Green);
+	ConsoleColor::Print(" | ⇊      |       { _ _ _ _ _ _ _ _ }               |     ⇊ | \n", ConsoleColor::Ink::Green);
+	ConsoleColor::Print(" | ⇊      |                                         |     ⇊ | \n", ConsoleColor::Ink::Green);
+	ConsoleColor::Print(" | ⇊	    ========================================      ⇊ | \n", ConsoleColor::Ink::Green);
+	ConsoleColor::Print(" | ⇊                                                      ⇊ | \n", ConsoleColor::Ink::Green);
+	ConsoleColor::Print(" | ⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄| \n", ConsoleColor::Ink::Green);
+	ConsoleColor::Print(" ⌊——————————————————————————————————————————————————————————⌋ \n", ConsoleColor::Ink::Green);
 
 
 	ConsoleColor::Print("GAMEOVER !! You have run out of guessess. The correct combination was: " + std::to_string(getValue()) + "\n", ConsoleColor::Ink::Red);
