@@ -23,6 +23,11 @@ int main()
 	GameMenu gameMenu;
 
 	Player* activePlayer = nullptr;
+	Player savedPlayer;
+	if (savedPlayer.loadFromFile("player_save.txt"))
+	{
+		activePlayer = new Player(savedPlayer);
+	}
 
 	bool isRunning = true;
 
@@ -74,6 +79,8 @@ int main()
 
 			Player createdPlayer = Player::createNewPlayer();
 			activePlayer = new Player(createdPlayer);
+			activePlayer->saveToFile("player_save.text");
+
 			break;
 		}
 		case GameMenu::MenuChoice::Level:
