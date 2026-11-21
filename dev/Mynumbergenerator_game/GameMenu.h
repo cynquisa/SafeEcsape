@@ -7,7 +7,7 @@ public:
 	enum class MenuChoice
 	{
 		Player = 1,
-		Level,
+		Start,
 		HighScores,
 		End
 	};

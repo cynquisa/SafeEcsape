@@ -47,6 +47,24 @@ bool Unlock::playLevel(Player& activePlayer)
 	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
 	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
 
+	std::cout << "\033[90m" << R"(
+      
+    ======================================================
+                     \\//        \\//
+    | |        | | < (.) > | | < (.) > | |        | |
+    | |      _ | |         | |         | | _      | |
+    | |     ( __ D         | |        C __  )     | |
+    | |     ( __ D       ( | | )      C __  )     | |   
+    | |     ( __ D         | |        C __  )     | |
+)" << "\033[0m\n";
+
+	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
+	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
+
+	ConsoleColor::Print(" Player: " + activePlayer.getName() + " (" + activePlayer.getCharacterSymbol() + ")\n", ConsoleColor::Ink::Purple);
+
+	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
+	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
 
 	ConsoleColor::Print("1. Easy  (Guess a number between 1 - 100 out of 15 chances.)\n", ConsoleColor::Ink::White);
 	ConsoleColor::Print("2. Hard  (Guess a number between 1 - 150 out of 12 chances.)\n", ConsoleColor::Ink::White);
@@ -92,7 +110,7 @@ bool Unlock::playLevel(Player& activePlayer)
 	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
 	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
 
-	ConsoleColor::Print("You have " + std::to_string (chancesLeft) + "attempts remaining.\n", ConsoleColor::Ink::Red);
+	ConsoleColor::Print("You have " + std::to_string (chancesLeft) + " attempts remaining.\n", ConsoleColor::Ink::Red);
 
 	while (chancesLeft > 0 && !crackedSafe)
 	{
@@ -111,28 +129,19 @@ bool Unlock::playLevel(Player& activePlayer)
 		}
 		else if (result == GuessResult::Correct)
 		{
-			ConsoleColor::Print(" ⌈—————————————————————————————————————————————————————————⌉ \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄|       | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊                                                      ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊                                                      ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊	    ========================================       ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |                                         | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |                                         | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |       ( 7 )  ( 8 )  ( 9 )               | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |       ( 4 )  ( 5 )  ( 6 )       _       | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |       ( 1 )  ( 2 )  ( 3 )     /   /     | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |                               |   |     | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |                               |   |     | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |                               |   |     | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |         _ _ _ _ _ _ _ _       | _ |     | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |       {                 }               | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |       {    O P E N      }               | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |       { _ _ _ _ _ _ _ _ }               | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊      |                                         | ⟩    ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊	    ========================================       ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇊                                                      ⇊ | \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" | ⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄⇄| \n", ConsoleColor::Ink::Green);
-			ConsoleColor::Print(" ⌊———————————————————————————————————————————————————————— ⌋ \n", ConsoleColor::Ink::Green);
+
+			std::cout << "\033[90m" << R"( 
+	  ====================================
+		| |         | |         | |
+		| |         | |         | |
+		| |         | |         | |
+		| |                     | |
+		| |    E S C A P E      | |
+		| |       E X I T       | |
+		    )" << "\033[0m\n";
+
+
+
 			ConsoleColor::Print("\n", ConsoleColor::Ink::White);
 			ConsoleColor::Print("\n", ConsoleColor::Ink::White);
 			ConsoleColor::Print("\n", ConsoleColor::Ink::White);
@@ -152,6 +161,21 @@ bool Unlock::playLevel(Player& activePlayer)
 
 if (!crackedSafe)
 {
+
+	std::cout << "\033[31m" << R"(
+      
+    ===================================================
+                     \\//        \\//
+    | |        | | < (.) > | | < (.) > | |        | |
+    | |      _ | |    *    | |    *    | | _      | |
+    | |     ( __ D    *    | |    *   C __  )     | |
+    | |   ( __ D      *  ( | | )  *     C __  )   | |   
+    | |     ( __ D         | |        C __  )     | |
+			Y O U   D I D   N O T  E S C A P E
+
+)" << "\033[0m\n";
+
+
 
 
 	ConsoleColor::Print("GAMEOVER !! You have run out of guessess. The correct combination was: " + std::to_string(getValue()) + "\n", ConsoleColor::Ink::Red);
