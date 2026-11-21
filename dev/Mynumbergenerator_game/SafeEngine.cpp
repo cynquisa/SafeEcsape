@@ -104,7 +104,7 @@ bool Unlock::playLevel(Player& activePlayer)
 	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
 	ConsoleColor::Print("\n", ConsoleColor::Ink::White);
 
-	ConsoleColor::Print("You have " + std::to_string (chancesLeft) + "attempts remaining.\n", ConsoleColor::Ink::Red);
+	ConsoleColor::Print("You have " + std::to_string (chancesLeft) + " attempts remaining.\n", ConsoleColor::Ink::Red);
 
 	while (chancesLeft > 0 && !crackedSafe)
 	{
@@ -124,15 +124,15 @@ bool Unlock::playLevel(Player& activePlayer)
 		else if (result == GuessResult::Correct)
 		{
 
-			std::cout << "\033[90m" << R"(
-	  ======================================
-			| |         | |         | |
-			| |         | |         | |
-			| |         | |         | |
-			| |                     | |
-			| |    E S C A P E D    | |
-			| |       E X I T       | |
-		      )" << "\033[0m\n";
+			std::cout << "\033[90m" << R"( 
+	  ====================================
+		| |         | |         | |
+		| |         | |         | |
+		| |         | |         | |
+		| |                     | |
+		| |    E S C A P E      | |
+		| |       E X I T       | |
+		    )" << "\033[0m\n";
 
 
 

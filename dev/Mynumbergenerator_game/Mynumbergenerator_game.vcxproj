@@ -24,6 +24,7 @@
     <ProjectGuid>{52148ea2-039c-45c7-a2ed-2bea8ee12ed1}</ProjectGuid>
     <RootNamespace>Mynumbergeneratorgame</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>SafeEscape_game</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,7 +141,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="GameMenu.cpp" />
-    <ClCompile Include="Mynumbergenerator_game.cpp" />
+    <ClCompile Include="SafeEscape.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="SafeEngine.cpp" />
   </ItemGroup>

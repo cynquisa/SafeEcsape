@@ -74,15 +74,17 @@ int main()
 
 			break;
 		}
-		case GameMenu::MenuChoice::Level:
+		case GameMenu::MenuChoice::Start:
 		{
 			if (activePlayer == nullptr)
 			{
 				std::cout << "\n[!] You must create your player first, please choose option 1.\n";
+				Input::Pause("Press Enter to retunr to the main menu...");
 			}
 			else
 			{
 				safeGame.playLevel(*activePlayer);
+				Input::Pause("Press Enter to return to the main menu...");
 			}
 			break;
 		}
@@ -92,7 +94,7 @@ int main()
 
 			else std::cout << "\nNo players have been recorded.\n";
 
-			Input::Pause("Press Enter to retunr to the main menu...");
+			Input::Pause("Press Enter to return to the main menu...");
 			break;
 		}
 		case GameMenu::MenuChoice::End:

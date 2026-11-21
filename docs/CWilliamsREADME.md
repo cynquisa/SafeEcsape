@@ -6,7 +6,7 @@ This repository will be used to keep track of research and development conducted
 
 # Project & Portfolio 1
 
-### Student First & Last Name
+### Cynquisa Williams
 
 Hello my name is Cynquisa]. I am a student from [Florida]. The purpose of this repository is to practice development using version control. This work will help me begin to build a portfolio of skills and accomplishment that can be shared in the future.
 
@@ -40,4 +40,4 @@ This week has been a world wind of research. I start the week thing I would crea
 
 ### Week 4
 
-My final stand up...
+My final stand up...I am focusing on addressing the feedback I received for my last merge and pull. I know that I need to get my input validation under control. I need to make sure to fix my try-catch to make sure the input is converted. I have completed the game I intended to make. I would like to add file/io to save a high score table. I wanted to do more but I know now is not the time to summon the feature goblin. I don't want to break my game at the end. I think what is left after the input validation would be adjusting the art, double-checking for typos and the final merge and pull. I am not seeing any bugs in the complier.
